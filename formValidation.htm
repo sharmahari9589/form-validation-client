@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        body{
+            margin: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background-color: grey;
+          
+        }
+    .container{
+    
+    border: 1px solid black;
+
+    padding: 20px;
+    position: absolute;
+    top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-size: 16px;
+    
+    }
+    input,textarea{
+        margin-top: 10px;
+        font-size: 2rem;
+  
+  top: 20px;
+    }
+    p{
+        color: red;
+    }
+    
+    </style>
+</head>
+<body>
+    <h2>Form Validation</h2>
+    <div class="container">
+    <form  name="myForm" id="myform" onsubmit="return checkdata()" >
+    <input type="text" name="user" id="userName" placeholder="enter user name">
+    <p id="usrName"></p>
+    <input type="Email" id="mail" placeholder="enter valid email">
+    <p id="mail-msg"></p>
+    <input type="date" id="date">
+    <p id="dob"></p>
+    <input type="tel" id="phone"  placeholder="enter mobile number">
+    <p id="mob"></p>
+    <input type="password" id="password" placeholder="enter password">
+    <p id="pass"></p>
+    <input type="password" name="" id="secpassword" placeholder="confirm password">
+    <p id="pass2"></p>
+    <textarea  id="area" cols="25" rows="5" placeholder= "About your self min 50 words"></textarea>
+    <p id="area1"></p>
+   <input type="checkbox" id="check" value="yes">
+   I agree with <a href="">terms and condition .</a>
+   <p id="chk"></p><br>
+    <input type="submit" id="submit" value="submit" >
+    </form>
+
+</div>
+
+<script src="formValidation.js"></script>
+</body>
+</html>
